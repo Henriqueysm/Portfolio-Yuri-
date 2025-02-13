@@ -13,6 +13,33 @@
     src: url('fonte/Super-Mario-World.ttf') format('truetype');
   }
 
+/* Estiliza a barra de rolagem inteira */
+::-webkit-scrollbar {
+  width: 7px; /* Largura da barra vertical */
+  height: 12px; /* Altura da barra horizontal */
+}
+
+/* Cor e estilo da área da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, var(--primary-color), var(--tertiary-color));
+}
+
+/* Estilo do botão de rolagem */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); /* Cor da barra de rolagem */
+  border-radius: 8px; /* Arredondar a barra */
+}
+
+/* Cor ao passar o mouse sobre a barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background: #f6fe04; /* Cor ao passar o mouse */
+}
+
+/* Estilo da extremidade (opcional) */
+::-webkit-scrollbar-corner {
+  background: #1a1a1a; /* Cor no canto (quando barra horizontal e vertical se encontram) */
+}
+
 * {
     margin: 0;
     padding: 0;
